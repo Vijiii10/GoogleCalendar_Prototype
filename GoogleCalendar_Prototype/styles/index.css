@@ -1,0 +1,95 @@
+@import "./button.css";
+@import "./color-select.css";
+@import "./dialog.css";
+@import "./event-details.css";
+@import "./event-list.css";
+@import "./event.css";
+@import "./fab.css";
+@import "./form.css";
+@import "./input.css";
+@import "./mini-calendar.css";
+@import "./nav.css";
+@import "./month-calendar.css";
+@import "./scroll.css";
+@import "./select.css";
+@import "./sidebar.css";
+@import "./toaster.css";
+@import "./week-calendar.css";
+@import "./responsive.css";
+
+* {
+  font-family:'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text-dark);
+}
+
+:root {
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-2xl: 1.5rem;
+
+  --line-height-xs: 1rem;
+  --line-height-sm: 1.25rem;
+  --line-height-md: 1.5rem;
+  --line-height-lg: 1.75rem;
+  --line-height-2xl: 2rem;
+
+  --border-radius-md: 0.25rem;
+
+  --duration-sm: 100ms;
+  --duration-md: 300ms;
+  --duration-2xl: 3000ms;
+
+  --color-blue-50: #a9c8f0;
+  --color-blue-500: #3b71c9;
+  --color-blue-600: #133786;
+
+  --color-red-500: #ef0e0e;
+  --color-red-600: #b51e1e;
+
+  --color-green-600: #17c155;
+
+  --color-gray-100: #f1f1f3;
+  --color-gray-300: #dee3e9;
+  --color-gray-400: #808691;
+  --color-gray-500: #5a606c;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-text-light: #dde0e3;
+  --color-text-dark: #070f27;
+
+  --box-shadow-md: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --box-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.app {
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.calendar {
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .app {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+}
